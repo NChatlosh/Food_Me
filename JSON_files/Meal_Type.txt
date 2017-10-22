@@ -1,1 +1,0 @@
-{"categories":[{"categories":{"id":3,"name":"Nightlife"}},{"categories":{"id":8,"name":"Breakfast"}},{"categories":{"id":9,"name":"Lunch"}},{"categories":{"id":10,"name":"Dinner"}}]}
