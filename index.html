@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Restaurant Picker</title>
+</head>
+<body>
+<h1>Restaurant Picker Demo(Zomato API)</h1>
+<label for="DineMethod">How are you dining today?</label>
+<select id="DineMethod">
+	
+</select>
+<label for="MealType">What kind of meal?</label>
+<select id="MealType">
+	
+</select>
+<label for="Region">Choose some regions</label>
+<form name="Region">
+<input type="checkbox" name="African" value="African">African<br>
+<input type="checkbox" name="American" value="American">American<br>
+<input type="checkbox" name="Asian" value="Asian">Asian<br>
+<input type="checkbox" name="Creole" value="Creole">Creole<br>
+<input type="checkbox" name="European" value="European">European<br>
+<input type="checkbox" name="Hawaiian" value="Hawaiian">Hawaiian<br>
+<input type="checkbox" name="Indian" value="Indian">Indian<br>
+<input type="checkbox" name="Mexican" value="Mexican">Mexican<br>
+<input type="checkbox" name="MiddleEastern" value="Middle_Eastern">Middle Eastern<br>
+<input type="checkbox" name="SouthAmerican" value="South_American">South American
+</form>
+<label for="Establishment">Choose restaurant types</label>
+<form name="Establishment">
+<input type="checkbox" name="BarPub" value="Bar_Pub">Bar/Pub<br>
+<input type="checkbox" name="CafeBakery" value="Cafe_Bakery">Cafe/Bakery<br>
+<input type="checkbox" name="CasualDining" value="Casual_Dining">Casual Dining<br>
+<input type="checkbox" name="FineDining" value="Fine_Dining">Fine Dining<br>
+<input type="checkbox" name="FastFood" value="Fast_Food">Fast Food
+</form>
+<button type="button" id="Submit">
+	submit
+</button>
+<p id="Response">
+	You are going to:
+</p>
+<script src="Scripts/API-Script_V3.js"></script>
+</body>
+</html>
