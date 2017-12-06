@@ -62,41 +62,37 @@
             
             <form name="Dine" id="DineMethod">
             	<div style="text-align: center !important;">
-               <label style=" margin-left: 25%;" class="Rad DMeth"><input type="radio" name="DM" value="2">Dine-Out</label>
-                <label class="Rad DMeth"><input type="radio" name="DM" value="1">Delivery</label><br>
+               <label  class="Rad DMeth"><input type="radio" name="DM" value="2"><img src="assets/dine-in.png"></label>
+                <label class="Rad DMeth"><input type="radio" name="DM" value="1"><img src="assets/delivery.png"></label><br>
                 </div>
             </form>
 
-            <h3>Are you a vegetarian? </h3>
-             <input type="checkbox" checked data-toggle="toggle", id="Veg", data-on="Yep" data-off="Nope" data-onstyle="success" data-offstyle="info">
+            <h3 class="yellowFont">Are you a vegetarian? </h3>
+             <input type="checkbox" data-toggle="toggle", id="Veg", data-on="Yep" data-off="Nope" data-onstyle="success" data-offstyle="info">
 
-            <h3>How much do you want to spend? </h3>
+            <h3 class="yellowFont">How much do you want to spend? </h3>
 
+<!--
             <form class="radio" id="budget">
-                <input type="radio" name="bud" value="1">&#36;<br>
-                <input type="radio" name="bud" value="2">&#36;&#36;<br>
-                <input type="radio" name="bud" value="3">&#36;&#36;&#36;
+                <input type="radio" name="bud" value="1"><img src="assets/$.png"><br>
+                <input type="radio" name="bud" value="2"><img src="assets/$$.png"><br>
+                <input type="radio" name="bud" value="3"><img src="assets/$$$.png">
+            </form>
+-->
+            
+            <form name="budget" id="budget" class="marginTop">
+            	<div style="text-align: center !important;">
+               <label class="Rad money"><input type="radio" name="bud" value="1"><img src="assets/$.png"></label>
+                <label class="Rad money"><input type="radio" name="bud" value="2"><img src="assets/$$.png"></label>
+                <label class="Rad money"><input type="radio" name="bud" value="3"><img src="assets/$$$.png"></label><br>
+                </div>
             </form>
             
-            <h3>How much time do you have?</h3>
-            <form class="radio" id="dist">
-                <input type="radio" name="time" value="700">&#36;<br>
-                <input type="radio" name="time" value="3212">&#36;&#36;<br>
-                <input type="radio" name="time" value="10000">&#36;&#36;&#36;
-            </form>
         </div>
 
         <div class="item">
             <h3 class="EstH">What kind of meal?</h3>
-
-            <form name="MealT" id="MealType">
-            	<div style="text-align: center !important;">
-               <label style=" margin-left: 13%;" class="Rad"><input type="radio" name="MT" value="8">Breakfast</label>
-                <label class="Rad"><input type="radio" name="MT" value="9">Lunch</label>
-                <label class="Rad"><input type="radio" name="MT" value="10">Dinner</label><br>
-                </div>
-            </form>
-           
+            
             <h3>What kind of establishment?</h3>
             <label for="Establishment">Choose restaurant types</label>
             <form name="Establishment" id="Estab">
@@ -106,6 +102,25 @@
                 <label class="CuisCheck"><input type="checkbox" name="Est" value="Fine_Dining">Fine Dining</label>
                 <label class="CuisCheck"><input type="checkbox" name="Est" value="Fast_Food">Fast Food</label>
             </form>
+
+            <form name="MealT" id="MealType" class="marginTop">
+            	<div style="text-align: center !important;">
+               <label class="Rad mealFeel"><input type="radio" name="MT" value="8"><img src="assets/breakfast.png"></label>
+                <label class="Rad mealFeel"><input type="radio" name="MT" value="9"><img src="assets/lunch.png"></label>
+                <label class="Rad mealFeel"><input type="radio" name="MT" value="10"><img src="assets/dinner.png"></label><br>
+                </div>
+            </form>
+            
+        
+            <h3 class="marginTop">How much time do you have?</h3>
+            <form name="HowMuchTime" id="TimeAmount">
+            	<div style="text-align: center !important;">
+               <label class="Rad mealMeal"><input type="radio" name="MT" value="8"><img src="assets/time1.png"></label>
+                <label class="Rad mealMeal"><input type="radio" name="MT" value="9"><img src="assets/time2.png"></label>
+                <label class="Rad mealMeal"><input type="radio" name="MT" value="10"><img src="assets/time3.png"></label><br>
+                </div>
+            </form>
+            
         </div>
 
         <div class="item">
@@ -228,13 +243,23 @@ $(".CuisCheck").on("vclick", function () {
    $(this).toggleClass("CheckSelected");
 });
 
-$(".Rad").on("vclick", function () {
+$(".mealFeel").on("vclick", function () {
 	$(".Rad").removeClass("CheckSelected");
    $(this).addClass("CheckSelected");
 });
 
 $(".DMeth").on("vclick", function () {
 	$(".DMeth").removeClass("CheckSelected");
+   $(this).addClass("CheckSelected");
+});
+
+$(".mealMeal").on("vclick", function () {
+	$(".mealMeal").removeClass("CheckSelected");
+   $(this).addClass("CheckSelected");
+});
+
+$(".money").on("vclick", function () {
+	$(".money").removeClass("CheckSelected");
    $(this).addClass("CheckSelected");
 });
 

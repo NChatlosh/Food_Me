@@ -1,0 +1,173 @@
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    background-color: aqua;
+}
+
+/* Set padding to keep content from hitting the edges */
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+.carousel-control.left, .carousel-control.right {
+   background-image:none !important;
+   filter:none !important;
+  height: auto;
+}
+
+.carousel-indicators {
+  position: absolute;
+  bottom: -40px; 
+  left: 50%;
+  z-index: 15;
+  width: 60%;
+  padding-left: 0;
+  margin-left: -30%;
+  text-align: center;
+  list-style: none;
+}
+
+.cuisine-selector input{
+   margin:0;padding:0;
+   -webkit-appearance:none;
+      -moz-appearance:none;
+           
+}
+
+.btn-primary{
+	width: 30px !important;
+	margin: 10px;
+}
+
+h2{
+	text-align: center !important;
+	margin-top: -2%;
+}
+
+h3{
+	text-align: center !important;
+	clear: both;
+}
+
+
+
+
+label.CuisCheck {
+	margin: auto;
+	background:#1ce4ff;
+	text-align:center;
+	width: 50%;
+ border:1px solid #ccc;
+ padding:10px;
+
+ display:block; 
+}
+
+label.CuisCheck:hover {
+ background:#eee;
+ cursor:pointer;
+}
+
+label.Rad {
+	margin: auto;
+/*	background:#F2F2F2;*/
+	text-align:center;
+	width: 33.3%;
+/* border:1px solid #ccc;*/
+ padding:10px;
+
+ display:inline block; 
+ float: left;
+}
+
+label.Rad:hover {
+ background:#eee;
+ cursor:pointer;
+}
+
+label.mealMeal {
+	margin: auto;
+/*	background:#F2F2F2;*/
+	text-align:center;
+	width: 33.3%;
+/* border:1px solid #ccc;*/
+ padding-left:10px;
+
+ display:inline block; 
+ float: left;
+}
+
+label.mealMeal:hover {
+ background:#eee;
+ cursor:pointer;
+}
+
+label.DMeth {
+    width: 50%;
+    padding:20px;
+}
+
+img {
+    margin-left: -2vw;
+}
+
+.marginTop {
+    margin-top: 5vh;
+}
+
+
+input[type=checkbox]{
+  display: none;
+}
+
+input[type=radio]{
+  display: none;
+}
+
+.CheckSelected{
+	background: #EF4B4C !important;
+    box-shadow: 5px 5px 10px #888 !important;
+    border-radius: 3px !important;
+}
+
+
+.mexican{background-image: url(images/mexican.jpg)}
+.italian{background-image: url(images/italian.png)}
+
+
+.CB input{
+	width: 50px;
+	height:40px;
+    border: 3px solid gray;
+    background-color: gray;
+}
+
+.Hor{
+	display: inline-block !important;
+}
+
+.cuisine-selector input:active +.cuisine{
+}
+.cuisine-selector input:checked +.cuisine{
+   -webkit-filter: none;
+      -moz-filter: none;
+           filter: none;
+   box-shadow: 0px 0px 10px #000;
+   border: 3px solid red;
+
+}
+
+button
+{
+	margin: auto !important;
+	
+}
+
+.yellowFont {
+    color: #F7D23B;
+}
+
