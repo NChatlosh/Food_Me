@@ -1,0 +1,232 @@
+﻿body {
+    padding-bottom: 20px;
+    font-family: 'Rubik', sans-serif;
+}
+
+/*html,body{
+  height:100%;
+}
+.carousel,.item,.active{
+  height: 100%;
+}
+.carousel-inner{
+   height: 75%;
+}*/
+
+/* Set padding to keep content from hitting the edges */
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+.carousel-control.left, .carousel-control.right {
+   background-image:none !important;
+   filter:none !important;
+  height: auto;
+}
+
+.carousel-indicators {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  z-index: 15;
+  width: 60%;
+  padding-left: 0;
+  margin-left: -30%;
+  text-align: center;
+  list-style: none;
+}
+
+.cuisine-selector input{
+   margin:0;padding:0;
+   -webkit-appearance:none;
+      -moz-appearance:none;
+           
+}
+
+.btn-primary{
+	width: 30px !important;
+	margin: 10px;
+}
+
+h2{
+	text-align: center !important;
+	margin-top: -2%;
+}
+
+h3{
+	text-align: center !important;
+	clear: both;
+}
+
+
+
+
+label.CuisCheck {
+	margin: auto;
+	background:#1ce4ff;
+	text-align:center;
+	width: 50%;
+ border:1px solid #ccc;
+ padding:10px;
+
+ display:block; 
+}
+
+label.CuisCheck:hover {
+ background:#eee;
+ cursor:pointer;
+}
+
+label.Rad {
+	margin: auto;
+	background:#1ce4ff;
+	text-align:center;
+	width: 25%;
+ border:1px solid #ccc;
+ padding:10px;
+
+ display:inline block; 
+ float: left;
+}
+
+label.Rad:hover {
+ background:#eee;
+ cursor:pointer;
+}
+
+input.PicBut{
+	display: none;
+}
+
+.FoodMe{
+		position:relative;
+   bottom: 50px;
+   /*left: 37vw;*/
+   z-index: 16;
+}
+
+.FoodBut:hover{
+	border: 3px solid red;
+	box-shadow: 0px 0px 10px #000;
+}
+
+.FoodBut:active{
+	border: 3px solid blue;
+	box-shadow: 0px 0px 10px #000;
+}
+
+.YN{
+	background: yellow;
+}
+
+input[type=checkbox]{
+  display: none;
+}
+
+input[type=radio]{
+  display: none;
+}
+
+.CheckSelected{
+	background:red !important;
+}
+
+
+.mexican{background-image: url(images/mexican.jpg)}
+.italian{background-image: url(images/italian.png)}
+
+
+.CB input{
+	width: 50px;
+	height:40px;
+    border: 3px solid gray;
+    background-color: gray;
+}
+
+.Hor{
+	display: inline-block !important;
+}
+
+.cuisine-selector input:active +.cuisine{
+}
+.cuisine-selector input:checked +.cuisine{
+   -webkit-filter: none;
+      -moz-filter: none;
+           filter: none;
+   box-shadow: 0px 0px 10px #000;
+   border: 3px solid red;
+
+}
+
+button
+{
+	margin: auto !important;
+}
+
+#myCarousel {
+   margin: 0;
+   width: 100vw;
+   height: 100vh;
+   position:absolute;
+   left:0;
+   top: 0;
+   
+}
+
+.item {
+   width: 100vw;
+   height: 100vh;
+   position:absolute;
+   top: 0;
+   padding-top: 70px;
+}
+
+.slide0{
+	background-color: white !important;
+}
+
+.slide1{
+	background-color: #F8D320 !important;
+}
+.slide2{
+	background-color: #EF4B4C !important;
+}
+.slide3{
+	background-color: #30B371 !important;
+}
+.slide4{
+	background-color: #093354 !important;
+}
+
+.item:nth-of-type(2) {
+   background-color: #F8D320 !important;
+}
+
+.item:nth-of-type(3) {
+   background-color: #EF4B4C !important;
+}
+
+
+.item:nth-of-type(4) {
+   background-color: #30B371 !important;
+}
+
+.item:nth-of-type(5) {
+   background-color: #093354 !important;
+   color: white;
+}
+
+/*
+F8D320-yellow
+
+EF4B4C-red
+
+30B371-green
+
+093354-blue
+
+*/
