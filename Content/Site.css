@@ -1,4 +1,4 @@
-﻿body {
+body {
     padding-top: 50px;
     padding-bottom: 20px;
     background-color: aqua;
@@ -74,10 +74,10 @@ label.CuisCheck:hover {
 
 label.Rad {
 	margin: auto;
-	background:#1ce4ff;
+/*	background:#F2F2F2;*/
 	text-align:center;
-	width: 25%;
- border:1px solid #ccc;
+	width: 33.3%;
+/* border:1px solid #ccc;*/
  padding:10px;
 
  display:inline block; 
@@ -87,6 +87,36 @@ label.Rad {
 label.Rad:hover {
  background:#eee;
  cursor:pointer;
+}
+
+label.mealMeal {
+	margin: auto;
+/*	background:#F2F2F2;*/
+	text-align:center;
+	width: 33.3%;
+/* border:1px solid #ccc;*/
+ padding-left:10px;
+
+ display:inline block; 
+ float: left;
+}
+
+label.mealMeal:hover {
+ background:#eee;
+ cursor:pointer;
+}
+
+label.DMeth {
+    width: 50%;
+    padding:20px;
+}
+
+img {
+    margin-left: -2vw;
+}
+
+.marginTop {
+    margin-top: 5vh;
 }
 
 
@@ -99,7 +129,9 @@ input[type=radio]{
 }
 
 .CheckSelected{
-	background:red !important;
+	background: #EF4B4C !important;
+    box-shadow: 5px 5px 10px #888 !important;
+    border-radius: 3px !important;
 }
 
 
@@ -134,3 +166,8 @@ button
 	margin: auto !important;
 	
 }
+
+.yellowFont {
+    color: #F7D23B;
+}
+
