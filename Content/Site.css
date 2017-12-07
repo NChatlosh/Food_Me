@@ -1,4 +1,4 @@
-﻿body {
+body {
     padding-bottom: 20px;
     font-family: 'Rubik', sans-serif;
 }
@@ -67,13 +67,12 @@ h3{
 
 label.CuisCheck {
 	margin: auto;
-	background:#1ce4ff;
+	background:#F8D320;
 	text-align:center;
 	width: 50%;
- border:1px solid #ccc;
- padding:10px;
-
- display:block; 
+     border:1px solid #ccc;
+     padding:10px;
+     display:block; 
 }
 
 label.CuisCheck:hover {
@@ -81,21 +80,60 @@ label.CuisCheck:hover {
  cursor:pointer;
 }
 
+label.CuisCheck2 {
+	margin: auto;
+	background:#F8D320;
+	text-align:center;
+	width: 50%;
+     border:1px solid #ccc;
+     padding:10px;
+     display:block; 
+}
+
+label.CuisCheck2:hover {
+ background:#eee;
+ cursor:pointer;
+}
+
 label.Rad {
 	margin: auto;
-	background:#1ce4ff;
 	text-align:center;
-	width: 25%;
- border:1px solid #ccc;
- padding:10px;
-
- display:inline block; 
- float: left;
+	width: 33.3%;
+    padding:10px;
+    display:inline block; 
+    float: left;
 }
 
 label.Rad:hover {
  background:#eee;
  cursor:pointer;
+}
+
+label.mealMeal {
+    margin: auto;
+	text-align:center;
+	width: 33.3%;
+    padding-left:10px;
+    display:inline block; 
+    float: left;
+}
+
+label.mealMeal:hover {
+ background:#eee;
+ cursor:pointer;
+}
+
+label.DMeth {
+    width: 50%;
+    padding:20px;
+}
+
+img {
+    margin-left: -2vw;
+}
+
+.marginTop {
+    margin-top: 5vh;
 }
 
 input.PicBut{
@@ -132,9 +170,23 @@ input[type=radio]{
 }
 
 .CheckSelected{
-	background:red !important;
+	background: #30B371 !important;
+    box-shadow: 5px 5px 10px #888 !important;
+    border-radius: 3px !important;
 }
 
+.CheckSelectedRed{
+	background: #EF4B4C !important;
+    box-shadow: 5px 5px 10px #888 !important;
+    border-radius: 3px !important;
+}
+
+.CheckSelectedBlue{
+	background: #093354 !important;
+    box-shadow: 5px 5px 10px #888 !important;
+    border-radius: 3px !important;
+    color: #FFF !important;
+}
 
 .mexican{background-image: url(images/mexican.jpg)}
 .italian{background-image: url(images/italian.png)}
@@ -183,6 +235,22 @@ button
    position:absolute;
    top: 0;
    padding-top: 70px;
+}
+
+.blueFont {
+    color: #093354;
+}
+
+.redFont {
+    color: #EF4B4C;
+}
+
+.yellowFont {
+    color: #F8D320;
+}
+
+.greenFont {
+    color: #30B371;
 }
 
 .slide0{
