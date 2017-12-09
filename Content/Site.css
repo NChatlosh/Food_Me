@@ -304,7 +304,7 @@ button
    color: white;
 }
 
-#Results {
+/* #Results {
     background: #FFF;
     color: #093354;
     width: 60%;
@@ -321,7 +321,89 @@ button
 
 #priceText {
     font-size: 1.5em;
+} */
+.card-title{
+    padding-top: 4vmin;
+    padding-bottom: 2vmin;
+    background-color: #6d050c;
+    height: auto;
 }
+#ResultText{
+    font-family:'Rubik', sans-serif;
+    color: #f5f5f5;
+    text-align: left;
+    font-size: 6vmin;
+    font-weight: 300; !important
+}
+#ResultText.h2{
+    text-align: left;
+    font-weight: 300;
+}
+#areaText{
+    text-align: left;
+    color: #f5f5f5;
+    padding-left: 2vmin;
+    font-size: 5vmin;
+    margin: auto;
+}
+#locText{
+    font-family:'Rubik', sans-serif;
+    font-weight: 300;
+    text-align: left;
+    color: #f5f5f5;
+    padding-left: 2vmin;
+    word-wrap: normal;
+    text-indent: 0;
+    font-size: 3.7vmin;
+    margin: auto;
+    display:inline-block;
+}
+#priceText{
+    text-align: left;
+    color: #f5f5f5;
+    padding-left: 2vmin;
+    font-size: 3.8vmin;
+    margin: auto;
+    font-weight: 300;
+}
+#ratingText{
+    text-align: left;
+    color: #f5f5f5;
+    padding-left: 2vmin;
+    font-size: 3.8vmin;
+    margin: auto;
+    font-weight: 200;
+}
+.card-address{
+    padding-top: 5%;
+    text-align: left;
+}
+.p{
+    text-align: left;
+    font-family: 'Montserrat', sans-serif;
+}
+.card-rating{
+    text-align: left;
+}
+.btn-primary{
+    margin-top: 3vh;
+    margin-bottom: 5vh;
+    text-align: center;
+    width: auto;
+}
+.card-block{
+    margin: 0 auto; 
+    float: none; 
+    position: relative;
+    width: 65%; 
+    height: 90%;
+    min-height: auto;
+    background-color: #9b0303; 
+}
+.card-price{
+    text-align: left;
+}
+
 
 
 
