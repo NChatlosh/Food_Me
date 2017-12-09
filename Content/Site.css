@@ -82,7 +82,7 @@ label.CuisCheck:hover {
 
 label.CuisCheck2 {
 	margin: auto;
-	background:#F8D320;
+	background:#EF4B4C;
 	text-align:center;
 	width: 50%;
      border:1px solid #ccc;
@@ -169,10 +169,11 @@ input[type=radio]{
   display: none;
 }
 
-.CheckSelected{
-	background: #30B371 !important;
+.CheckSelectedYellow{
+	background: #F8D320 !important;
     box-shadow: 5px 5px 10px #888 !important;
     border-radius: 3px !important;
+    color: #EF4B4C !important;
 }
 
 .CheckSelectedRed{
@@ -185,7 +186,7 @@ input[type=radio]{
 	background: #093354 !important;
     box-shadow: 5px 5px 10px #888 !important;
     border-radius: 3px !important;
-    color: #FFF !important;
+    color: #F8D320 !important;
 }
 
 .mexican{background-image: url(images/mexican.jpg)}
@@ -253,6 +254,14 @@ button
     color: #30B371;
 }
 
+.CuisCheck {
+    color: #093354
+}
+
+.CuisCheck2 {
+    color: #F8D320;
+}
+
 .slide0{
 	background-color: white !important;
 }
@@ -264,10 +273,10 @@ button
 	background-color: #EF4B4C !important;
 }
 .slide3{
-	background-color: #30B371 !important;
+	background-color: #093354 !important;
 }
 .slide4{
-	background-color: #093354 !important;
+	background-color: #30B371 !important;
 }
 
 .item:nth-of-type(2) {
@@ -280,11 +289,11 @@ button
 
 
 .item:nth-of-type(4) {
-   background-color: #30B371 !important;
+   background-color: #093354 !important;
 }
 
 .item:nth-of-type(5) {
-   background-color: #093354 !important;
+   background-color: #30B371 !important;
    color: white;
 }
 
