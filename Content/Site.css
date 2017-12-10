@@ -1,0 +1,431 @@
+body {
+    padding-bottom: 20px;
+    font-family: 'Rubik', sans-serif;
+    background-color: #30B371 !important;
+}
+
+/*html,body{
+  height:100%;
+}
+.carousel,.item,.active{
+  height: 100%;
+}
+.carousel-inner{
+   height: 75%;
+}*/
+
+/* Set padding to keep content from hitting the edges */
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+.carousel-control.left, .carousel-control.right {
+   background-image:none !important;
+   filter:none !important;
+  height: auto;
+}
+
+.carousel-indicators {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  z-index: 15;
+  width: 60%;
+  padding-left: 0;
+  margin-left: -30%;
+  text-align: center;
+  list-style: none;
+}
+
+.cuisine-selector input{
+   margin:0;padding:0;
+   -webkit-appearance:none;
+      -moz-appearance:none;
+           
+}
+
+h2{
+	text-align: center !important;
+	margin-top: -2%;
+}
+
+h3{
+	text-align: center !important;
+	clear: both;
+}
+
+h4 {
+	text-align: center !important;
+	clear: both;
+    font-size: 3em;
+}
+
+
+
+
+label.CuisCheck {
+	margin: auto;
+	background:#F8D320;
+	text-align:center;
+	width: 50%;
+     border:1px solid #ccc;
+     padding:10px;
+     display:block; 
+}
+
+label.CuisCheck:hover {
+ background:#eee;
+ cursor:pointer;
+}
+
+label.CuisCheck2 {
+	margin: auto;
+	background:#EF4B4C;
+	text-align:center;
+	width: 50%;
+     border:1px solid #ccc;
+     padding:10px;
+     display:block; 
+}
+
+label.CuisCheck2:hover {
+ background:#eee;
+ cursor:pointer;
+}
+
+label.Rad {
+	margin: auto;
+	text-align:center;
+	width: 33.3%;
+    padding:10px;
+    display:inline block; 
+    float: left;
+}
+
+label.Rad:hover {
+ background:#eee;
+ cursor:pointer;
+}
+
+label.mealMeal {
+    margin: auto;
+	text-align:center;
+	width: 33.3%;
+    padding-left:10px;
+    display:inline block; 
+    float: left;
+}
+
+label.mealMeal:hover {
+ background:#eee;
+ cursor:pointer;
+}
+
+label.DMeth {
+    width: 50%;
+    padding:20px;
+}
+
+img {
+    margin-left: -2vw;
+}
+
+.marginTop {
+    margin-top: 5vh;
+}
+
+input.PicBut{
+	display: none;
+}
+
+.FoodMe{
+		position:relative;
+		margin-top: 5em;
+   bottom: 50px;
+   /*left: 37vw;*/
+   z-index: 16;
+}
+
+.FoodBut:hover{
+	border: 3px solid red;
+	box-shadow: 0px 0px 10px #000;
+}
+
+.FoodBut:active{
+	border: 3px solid blue;
+	box-shadow: 0px 0px 10px #000;
+}
+
+.YN{
+	background: #093354;
+    color: #FFF;
+}
+
+.LocDiv{
+	height: 350px !important;
+}
+
+input[type=checkbox]{
+  display: none;
+}
+
+input[type=radio]{
+  display: none;
+}
+
+.CheckSelectedYellow{
+	background: #F8D320 !important;
+    box-shadow: 5px 5px 10px #888 !important;
+    border-radius: 3px !important;
+    color: #EF4B4C !important;
+}
+
+.CheckSelectedRed{
+	background: #EF4B4C !important;
+    box-shadow: 5px 5px 10px #888 !important;
+    border-radius: 3px !important;
+}
+
+.CheckSelectedBlue{
+	background: #093354 !important;
+    box-shadow: 5px 5px 10px #888 !important;
+    border-radius: 3px !important;
+    color: #F8D320 !important;
+}
+
+.mexican{background-image: url(images/mexican.jpg)}
+.italian{background-image: url(images/italian.png)}
+
+
+.CB input{
+	width: 50px;
+	height:40px;
+    border: 3px solid gray;
+    background-color: gray;
+}
+
+.Hor{
+	display: inline-block !important;
+}
+
+.cuisine-selector input:active +.cuisine{
+}
+.cuisine-selector input:checked +.cuisine{
+   -webkit-filter: none;
+      -moz-filter: none;
+           filter: none;
+   box-shadow: 0px 0px 10px #000;
+   border: 3px solid red;
+
+}
+
+button
+{
+	margin: auto !important;
+}
+
+#myCarousel {
+   margin: 0;
+   width: 100vw;
+   height: 100vh;
+   padding-top: 5px;
+   position:absolute;
+   left:0;
+   top: 0;
+   
+}
+
+.item {
+   width: 100vw;
+   height: 100vh;
+   position:absolute;
+   overflow-y: visible !important;
+   top: 0;
+   padding-top: 70px;
+}
+
+.CBOverFlow{
+	height: 40em;
+}
+
+.blueFont {
+    color: #093354;
+}
+
+.redFont {
+    color: #EF4B4C;
+}
+
+.yellowFont {
+    color: #F8D320;
+}
+
+.greenFont {
+    color: #30B371;
+}
+
+.CuisCheck {
+    color: #093354
+}
+
+.CuisCheck2 {
+    color: #F8D320;
+}
+
+.slide0{
+	background-color: #30B371 !important;
+}
+
+.slide1{
+	background-color: #F8D320 !important;
+}
+.slide2{
+	background-color: #EF4B4C !important;
+}
+.slide3{
+	background-color: #093354 !important;
+}
+.slide4{
+	background-color: #30B371 !important;
+}
+
+.item:nth-of-type(2) {
+   background-color: #F8D320 !important;
+}
+
+.item:nth-of-type(3) {
+   background-color: #EF4B4C !important;
+}
+
+
+.item:nth-of-type(4) {
+   background-color: #093354 !important;
+}
+
+.item:nth-of-type(5) {
+   background-color: #30B371 !important;
+   color: white;
+}
+
+/* #Results {
+    background: #FFF;
+    color: #093354;
+    width: 60%;
+    height:60%;
+    margin-top: 10%;
+    margin-left: 20%;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#ResultText {
+    font-size: 2em;
+}
+
+#priceText {
+    font-size: 1.5em;
+} */
+.card-title{
+    padding-top: 4vmin;
+    padding-bottom: 2vmin;
+    background-color: #6d050c;
+    height: auto;
+}
+#ResultText{
+    font-family:'Rubik', sans-serif;
+    color: #f5f5f5;
+    text-align: left;
+    font-size: 6vmin;
+    font-weight: 300; !important
+}
+#ResultText.h2{
+    text-align: left;
+    font-weight: 300;
+}
+#areaText{
+    text-align: left;
+    color: #f5f5f5;
+    padding-left: 2vmin;
+    font-size: 5vmin;
+    margin: auto;
+}
+#locText{
+    font-family:'Rubik', sans-serif;
+    font-weight: 300;
+    text-align: center;
+    color: #f5f5f5;
+    padding-left: 2vmin;
+    word-wrap: normal;
+    text-indent: 0;
+    font-size: 3.7vmin;
+    margin: auto;
+    display:inline-block;
+}
+#priceText{
+    text-align: center;
+    color: #f5f5f5;
+    padding-left: 2vmin;
+    font-size: 3.8vmin;
+    margin: auto;
+    font-weight: 300;
+}
+#ratingText{
+    text-align: center;
+    color: #f5f5f5;
+    padding-left: 2vmin;
+    font-size: 3.8vmin;
+    margin: auto;
+    font-weight: 200;
+}
+.card-address{
+    padding-top: 5%;
+    text-align: left;
+}
+.p{
+    text-align: left;
+    font-family: 'Montserrat', sans-serif;
+}
+.card-rating{
+    text-align: center;
+}
+.btn-primary{
+    margin-top: 3vh;
+    margin-bottom: 5vh;
+    text-align: center;
+    width: auto;
+}
+.card-block{
+    margin: 0 auto; 
+    float: none; 
+    position: relative;
+    width: 65%; 
+    height: 90%;
+    min-height: auto;
+    background-color: #9b0303; 
+}
+.card-price{
+    text-align: center;
+}
+
+
+
+
+
+/*
+F8D320-yellow
+
+EF4B4C-red
+
+30B371-green
+
+093354-blue
+
+331832 - burgandy
+
+75DDDD - light blue
+
+*/
