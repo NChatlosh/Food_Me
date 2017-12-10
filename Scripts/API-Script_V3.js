@@ -227,24 +227,65 @@ function GetRestaurant(request)
     }
 }
 
+//OLD DIPLAYREST()
+// function DisplayRest(object)
+//{
+//    var length = object.restaurants.length;
+//    var index = getRandomInt(0, length);
+//    while (object.restaurants[index].restaurant.price_range > budgetValue) {
+//        var index = getRandomInt(0, length);
+//    }
+//    var restName = object.restaurants[index].restaurant.name;
+//    var restLoc = object.restaurants[index].restaurant.location.address;
+//    var priceRange = object.restaurants[index].restaurant.price_range;
+//    var responseString = 'You are going to: ' + restName + ' located at: ' + restLoc;
+//    var priceString = "Price Range: " + priceRange;
+//    var resultText = document.getElementById('ResultText');
+//    var priceText = document.getElementById('priceText');
+//    resultText.innerHTML = responseString;
+//    priceText.innerHTML = priceString;
+//    Reset();
+//}
+//NEW DISPLAYREST
  function DisplayRest(object)
 {
     var length = object.restaurants.length;
     var index = getRandomInt(0, length);
     while (object.restaurants[index].restaurant.price_range > budgetValue) {
-        var index = getRandomInt(0, length);
+        index = getRandomInt(0, length);
     }
     var restName = object.restaurants[index].restaurant.name;
+    var area = object.restaurants[index].restaurant.location.locality;
     var restLoc = object.restaurants[index].restaurant.location.address;
     var priceRange = object.restaurants[index].restaurant.price_range;
-    var responseString = 'You are going to: ' + restName + ' located at: ' + restLoc;
-    var priceString = "Price Range: " + priceRange;
+    var rating = object.restaurants[index].restaurant.user_rating.aggregate_rating;
+    var site = object.restaurants[index].restaurant.url;
+    var menu = object.restaurants[index].restaurant.menu_url;
+    
+    var responseString = restName;
+    var areaString = area;
+    var locString = restLoc;
+    var priceString = "Price Level: " + priceRange;
+    var ratingString = "Rating: " + rating;
+    
     var resultText = document.getElementById('ResultText');
+    var areaText = document.getElementById('areaText');
+    var locText = document.getElementById('locText');
     var priceText = document.getElementById('priceText');
+    var ratingText = document.getElementById('ratingText');
+    var menuText = document.getElementById('menuText').setAttribute("href", menu);
+    var siteText = document.getElementById('siteText').setAttribute("href", site);
+    
     resultText.innerHTML = responseString;
+    areaText.innerHTML = areaString;
+    locText.innerHTML = locString;
     priceText.innerHTML = priceString;
+    ratingText.innerHTML = ratingString;
+    menuText.href = menu;
+    siteText.href = menu;
     Reset();
 }
+
 
 //got this code from https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random
 //returns a random generate integer

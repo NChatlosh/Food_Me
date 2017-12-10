@@ -41,13 +41,14 @@
     <!-- Wrapper for slides -->
     <div style="text-align: center !important; margin: auto !important;" class="carousel-inner">
     	
-    	<div style="text-align: center !important; margin: auto !important;" class="item active">
+	    
+	<div style="text-align: center !important; margin: auto !important;" class="item active LocDiv slide0">
     		<h3>May we use your location for a better experience?</h3>
     		<div style="text-align: center; margin: auto;">
-            <input type="text" id="zipcodeEntry" placeholder="Zipcode" style="width: 60%; font-size: 2em" />
-    		<input type="button" class="FoodBut YN" value="Use My Location" style="width: 30%; height: 4em;" onclick="getLocation()"/>
-    		<input type="button" class="FoodBut YN" value="Use My Zipcode" style="width: 30%; height: 4em;" onclick="getLocationFromZipcode()"/>
-    		</div>
+		    <input type="text" id="zipcodeEntry" placeholder="Zipcode" style="width: 78%; font-size: 2em; margin: 1.4em;" />
+			<input type="button" class="FoodBut YN" value="Use My Location" style="height: 4em;" onclick="getLocation()"/>
+			<input type="button" class="FoodBut YN" value="Use My Zipcode" style="height: 4em;" onclick="getLocationFromZipcode()"/>
+		</div>
     	</div>
     	
         <div style="text-align: center !important; margin: auto !important;" class="item">
@@ -109,7 +110,7 @@
             
         </div>
 
-        <div class="item redFont">
+        <div class="item redFont CBOverFlow">
             <h3>What kind of cuisine?</h3>
             <form name="Region" id="Cuisines">
 							<label class="CuisCheck2">African   <input type="checkbox" name="Reg" value="African"></label>
@@ -125,11 +126,17 @@
             </form>
         </div>
         <div class="item">
-           <h3>Results:</h3>
             <div id="Results">
-                <text id="ResultText"></text>
-                <br>
-                <text id="priceText"></text>
+                <div class="card">
+                    <div class="card-block">
+                        <h2 class="card-title"><text id="ResultText"></text><br><text id="areaText"></text></h2>
+                            <h4 class="card-address"><text id="locText"></text></h4>
+                                <p class="card-price"><text id="priceText"></text></p>
+                                <p class="card-rating"><text id="ratingText"></text></p>
+                        <a href="" id="siteText" class="btn btn-primary text-center btn-lg">More</a>
+                        <a href="" id="menuText" class="btn btn-primary text-center btn-lg">Menu</a>
+                    </div>
+                </div>
             </div>
         </div>
         
