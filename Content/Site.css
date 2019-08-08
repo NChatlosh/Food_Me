@@ -108,13 +108,12 @@ label.CuisCheck {
 	background:#F8D320;
 	text-align:center;
 	width: 50%;
-     border:1px solid #ccc;
      padding:10px;
      display:block; 
 }
 
 label.CuisCheck:hover {
- background:#eee;
+ background:#30B371;
  cursor:pointer;
 }
 
@@ -123,14 +122,16 @@ label.CuisCheck2 {
 	background:#EF4B4C;
 	text-align:center;
 	width: 50%;
-     border:1px solid #ccc;
      padding:10px;
      display:block; 
 }
 
 label.CuisCheck2:hover {
- background:#eee;
+ background:#1684D9;
  cursor:pointer;
+}
+#Veg{
+    text-align: center;
 }
 
 label.Rad {
@@ -181,25 +182,35 @@ input.PicBut{
 .FoodMe{
 		position:relative;
 		margin-top: 5em;
-		border: 2px solid #093354;
+		border-radius: 3px;
    bottom: 50px;
    /*left: 37vw;*/
    z-index: 16;
 }
 
 .FoodBut:hover{
-	border: 3px solid red;
-	box-shadow: 0px 0px 10px #000;
+-webkit-box-shadow: 9px 7px 11px -7px rgba(38,38,38,0.63);
+-moz-box-shadow: 9px 7px 11px -7px rgba(38,38,38,0.63);
+box-shadow: 9px 7px 11px -7px rgba(38,38,38,0.63);
 }
 
 .FoodBut:active{
-	border: 3px solid blue;
-	box-shadow: 0px 0px 10px #000;
+-webkit-box-shadow: 9px 7px 8px -4px rgba(38,38,38,0.63);
+-moz-box-shadow: 9px 7px 8px -4px rgba(38,38,38,0.63);
+box-shadow: 9px 7px 8px -4px rgba(38,38,38,0.63);
 }
 
 .YN{
 	background: #093354;
     color: #FFF;
+    border: none;
+    border-radius: 5px;
+}
+.YN:hover{
+    background: #1D87DC;
+}
+.YN:active{
+    background: #00A2FF;
 }
 
 .LocDiv{
@@ -256,13 +267,14 @@ input[type=radio]{
       -moz-filter: none;
            filter: none;
    box-shadow: 0px 0px 10px #000;
-   border: 3px solid red;
+
 
 }
 
 button
 {
 	margin: auto !important;
+    border-radius: 4px;
 }
 
 #myCarousel {
@@ -306,11 +318,13 @@ button
 }
 
 .CuisCheck {
-    color: #093354
+    color: #093354;
+    margin-bottom: 1px;
 }
 
 .CuisCheck2 {
     color: #F8D320;
+    margin-bottom: 1px;
 }
 
 .slide0{
@@ -429,11 +443,62 @@ button
 .card-rating{
     text-align: center;
 }
+/*
 .btn-primary{
     margin-top: 3vh;
     margin-bottom: 5vh;
     text-align: center;
     width: auto;
+}
+*/
+
+#menuText{
+    margin-top: 3vh;
+    font-size: 1em;
+    margin-bottom: 5vh;
+    text-align: center;
+    height: 4em;
+    width: 6em;
+    background: #093354;
+    color: #FFF;
+    border: none;
+    border-radius: 5px;
+}
+#siteText{
+    margin-top: 3vh;
+    font-size: 1em;
+    height: 4em;
+    margin-bottom: 5vh;
+    text-align: center;
+    width: 6em;
+    background: #093354;
+    color: #FFF;
+    border: none;
+    border-radius: 5px;
+}
+#menuText:hover{
+    background: #1D87DC;
+-webkit-box-shadow: 9px 7px 11px -7px rgba(38,38,38,0.63);
+-moz-box-shadow: 9px 7px 11px -7px rgba(38,38,38,0.63);
+box-shadow: 9px 7px 11px -7px rgba(38,38,38,0.63);
+}
+#menuText:active{
+        -webkit-box-shadow: 9px 7px 8px -4px rgba(38,38,38,0.63);
+-moz-box-shadow: 9px 7px 8px -4px rgba(38,38,38,0.63);
+box-shadow: 9px 7px 8px -4px rgba(38,38,38,0.63);
+    background: #00A2FF;
+}
+#siteText:hover{
+    background: #1D87DC;
+-webkit-box-shadow: 9px 7px 11px -7px rgba(38,38,38,0.63);
+-moz-box-shadow: 9px 7px 11px -7px rgba(38,38,38,0.63);
+box-shadow: 9px 7px 11px -7px rgba(38,38,38,0.63);
+}
+#siteText:active{
+    -webkit-box-shadow: 9px 7px 8px -4px rgba(38,38,38,0.63);
+-moz-box-shadow: 9px 7px 8px -4px rgba(38,38,38,0.63);
+box-shadow: 9px 7px 8px -4px rgba(38,38,38,0.63);
+    background: #00A2FF;
 }
 .card-block{
     margin: 0 auto; 
